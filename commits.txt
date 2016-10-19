@@ -1,3 +1,9 @@
+commit 2911464d97efc019ccca9bf3b9873b8ca1ab700a
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Wed Oct 19 18:28:05 2016 +0200
+
+    Configuracion de la estructura del programa , primer cambio realizado, añadido un fondo blanco para poner sprites
+
 commit ead879e29b69607094d9c1165412a45e9dfe6585
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Tue Oct 18 10:16:32 2016 +0200
