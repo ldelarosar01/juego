@@ -1,3 +1,9 @@
+commit ead879e29b69607094d9c1165412a45e9dfe6585
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Tue Oct 18 10:16:32 2016 +0200
+
+    añadiendo todos los directorios
+
 commit 1829021c67562cb5c7b8b67f5a7153b00d51add0
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Tue Oct 18 10:12:12 2016 +0200
