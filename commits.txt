@@ -1,3 +1,9 @@
+commit c82914988cb8fd0ee32d17b7769a362c1a30c317
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Wed Oct 19 18:50:49 2016 +0200
+
+    Añadiendo mi primer sprite un dragoncito plagiado del de google
+
 commit 2911464d97efc019ccca9bf3b9873b8ca1ab700a
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Wed Oct 19 18:28:05 2016 +0200
