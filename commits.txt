@@ -1,3 +1,9 @@
+commit 39a6e73f4a9817680abb9e4e47144c4e077b40b4
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Thu Oct 20 17:35:27 2016 +0200
+
+    Cambios importantes, fondo negro y dragon moviendose con delimitadores
+
 commit 9a2b8fd4cf18f413db86c1434f08a2bc70b45754
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Wed Oct 19 19:48:42 2016 +0200
