@@ -1,3 +1,9 @@
+commit 2954aab35e0206a0aad31a56b941b1dcbcf5c996
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Mon Oct 24 19:14:15 2016 +0200
+
+    Cambios importantes añadiendo gravedad , incluyendo asi que el dragon salta.
+
 commit c81bc4eb10253d45e0ce2512cd3fc891ff2f5ede
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Fri Oct 21 09:32:07 2016 +0200

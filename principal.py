@@ -11,6 +11,33 @@ HEIGHT = 500
 gravity = 50
 
 theClock = pygame.time.Clock()
+def hasPerdido ():
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption("Juegecito Pygame")
+    background_image = load_image('images/gameOver.png', True)
+
+    clock = pygame.time.Clock()
+   
+
+    while True:
+        time = clock.tick(26)
+        keys = pygame.key.get_pressed()
+        for eventos in pygame.event.get():
+            if keys[K_SPACE] and [K_KP_ENTER] :
+                main()
+            if eventos.type == QUIT:
+                sys.exit(0)
+       
+        
+        screen.blit(background_image,(0,0))
+  
+        pygame.display.flip()
+        pygame.display.update()
+        theClock.tick(10)
+        
+        
+    return 0
+
 class Nubes(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -49,7 +76,6 @@ class Dragon(pygame.sprite.Sprite):
               if keys[K_SPACE]:
                      self.rect.centery += 400
                      self.rect.centery -= 400
-                     
                      self.rect.centery -= gravity 
                      
                 
@@ -63,16 +89,18 @@ class Cactus(pygame.sprite.Sprite):
         self.speed = [0.5]
 
        
-    def actualizar(self, time):
+    def actualizar(self, time,dragon):
         print self.rect.centerx
         self.rect.centerx += self.speed[0] * 21
         if self.rect.centerx >= WIDTH :
             self.rect.centerx = -1500
         self.rect.centerx += self.speed[0] * 30
-
-
+        if pygame.sprite.collide_rect(self,dragon):
+            self.speed[0] = -self.speed[0]
+            self.rect.centerx += self.speed[0] * time
+            hasPerdido()
             
-        
+     
                 
 def load_image(filename, transparent=True):
         try: image = pygame.image.load(filename)
@@ -108,8 +136,7 @@ def main():
         dragon.actualizarDragon(time)
         dragon.saltar(time,keys)
         nubes.actualizarNubes(time)
-        cactus.actualizar(time)
-    
+        cactus.actualizar(time,dragon)
         screen.blit(background_image,(0,0))
         screen.blit(nubes.image, nubes.rect)
         screen.blit(dragon.image, dragon.rect)
