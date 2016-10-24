@@ -1,3 +1,9 @@
+commit c81bc4eb10253d45e0ce2512cd3fc891ff2f5ede
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Fri Oct 21 09:32:07 2016 +0200
+
+    Cambios bastantes cambio de fondo estable, nubes añadidas, y cactus añadido
+
 commit 39a6e73f4a9817680abb9e4e47144c4e077b40b4
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Thu Oct 20 17:35:27 2016 +0200
