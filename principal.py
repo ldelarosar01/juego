@@ -11,6 +11,9 @@ HEIGHT = 500
 gravity = 50
 
 theClock = pygame.time.Clock()
+pygame.mixer.init()
+sonido = pygame.mixer.Sound("background.mp3")
+
 def hasPerdido ():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Juegecito Pygame")
@@ -23,7 +26,7 @@ def hasPerdido ():
         time = clock.tick(26)
         keys = pygame.key.get_pressed()
         for eventos in pygame.event.get():
-            if keys[K_SPACE] and [K_KP_ENTER] :
+            if keys[K_SPACE]:
                 main()
             if eventos.type == QUIT:
                 sys.exit(0)
@@ -33,7 +36,7 @@ def hasPerdido ():
   
         pygame.display.flip()
         pygame.display.update()
-        theClock.tick(10)
+      
         
         
     return 0
@@ -121,17 +124,19 @@ def main():
     dragon = Dragon()
     cactus = Cactus()
     nubes = Nubes()
+
     clock = pygame.time.Clock()
-   
+    sonido.play()
 
     while True:
         time = clock.tick(26)
         keys = pygame.key.get_pressed()
+        
         for eventos in pygame.event.get():
- 
+
             if eventos.type == QUIT:
                 sys.exit(0)
-       
+
        #Frecuencia para actualizar los sprites en el fondo indicado
         dragon.actualizarDragon(time)
         dragon.saltar(time,keys)
