@@ -6,13 +6,14 @@ from Tkconstants import TOP
  
 import time
 from time import sleep
+from pygame.mixer_music import play
 WIDTH = 1000
 HEIGHT = 500
 gravity = 50
 
 theClock = pygame.time.Clock()
-pygame.mixer.init()
-sonido = pygame.mixer.Sound("background.mp3")
+
+
 
 def hasPerdido ():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -90,7 +91,14 @@ class Cactus(pygame.sprite.Sprite):
         self.rect.centerx = 1900
         self.rect.centery = 400
         self.speed = [0.5]
-
+    
+    def cactus2(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = load_image("images/cactus.png", True)
+        self.rect = self.image.get_rect()
+        self.rect.centerx = 2500
+        self.rect.centery = 400
+        self.speed = [0.5]
        
     def actualizar(self, time,dragon):
         print self.rect.centerx
@@ -124,9 +132,7 @@ def main():
     dragon = Dragon()
     cactus = Cactus()
     nubes = Nubes()
-
     clock = pygame.time.Clock()
-    sonido.play()
 
     while True:
         time = clock.tick(26)
@@ -142,9 +148,13 @@ def main():
         dragon.saltar(time,keys)
         nubes.actualizarNubes(time)
         cactus.actualizar(time,dragon)
+        cactus.actualizar(time,dragon)
         screen.blit(background_image,(0,0))
         screen.blit(nubes.image, nubes.rect)
         screen.blit(dragon.image, dragon.rect)
+        screen.blit(cactus.image, cactus.rect)
+        screen.blit(cactus.image, cactus.rect)
+        screen.blit(cactus.image, cactus.rect)
         screen.blit(cactus.image, cactus.rect)
         pygame.display.flip()
         pygame.display.update()

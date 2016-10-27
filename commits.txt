@@ -1,3 +1,15 @@
+commit 2f1be3a6367681976aa6d0e137172d6192e3a565
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Tue Oct 25 09:54:04 2016 +0200
+
+    Final
+
+commit 49570f797fbd397f423780d9b740ad40da539a05
+Author: Luis <luisdelarosaruiz@gmail.com>
+Date:   Mon Oct 24 20:06:11 2016 +0200
+
+    Finalizado, con colisiones y game oveer
+
 commit 2954aab35e0206a0aad31a56b941b1dcbcf5c996
 Author: Luis <luisdelarosaruiz@gmail.com>
 Date:   Mon Oct 24 19:14:15 2016 +0200
